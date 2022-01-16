@@ -113,31 +113,26 @@
             height: 100vh;
             background: var(--color_blue);
             top: 80px;
-            left: -120%;
+            left: -100%;
             text-align: center;
             transition: all .5s;
+            margin-top: 10px;
         }
-        nav li {
+        nav ul li {
             display: block;
             margin: 50px 0;
             line-height: 30px;
         }
-        nav a {
+        nav ul li a {
             font-size: 20px;
         }
         a.active,
         a:hover {
             border: none;
-            color: #3498db;
+            color: var(--color_red);
         }
         nav ul.show {
-            left: 0;
-        }
-        header {
-            left: -120%;
-        }
-        header.active {
-            left: 0%;
+            left: 0px;
         }
     }
     
