@@ -1,206 +1,231 @@
-/**CONFIGURATION**/
-
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: "Raleway", sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-/**Colors**/
-
- :root {
-    --color_black: #0000;
-    --color_white: #ffff;
-    --color_orange: #D2691E;
-    --color_blue: #0D64E5;
-    --color_red: #EF1414;
-    --color_gray: #E6E4E4;
-    --color_gray_service: #C4C4C4;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-/**Menu**/
-
-nav {
-    height: 110px;
-    width: 100%;
-    background: var(--color_orange);
-}
-
-nav .container {
-    margin-top: 10px;
-}
-
-nav img {
-    cursor: pointer;
-    margin-top: 10px;
-    width: 90px;
-    margin-left: 180px;
-}
-
-.center {
-    padding: 0 4%;
-    margin: 0 auto;
-}
-
-nav ul {
-    float: right;
-    margin-right: 40px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 20px 8px;
-}
-
-nav ul li a {
-    color: var(--color_white);
-    font-size: 15px;
-    padding: 7px 10px;
-    border-radius: 3px;
-    border: 1px solid transparent;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a.active,
-a:hover {
-    border: 1px solid var(--color_white);
-    transition: .5s;
-}
-
-nav #icon {
-    color: var(--color_white);
-    font-size: 30px;
-    line-height: 80px;
-    float: right;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/**Carosel**/
-
-.carousel {
-    margin-top: -27px;
-    width: 100%;
-    display: inline-block;
-}
-
-.carousel .carousel-inner .carousel-item img {
-    height: 520px;
-}
-
-
-/**Services**/
-
-.services {
-    margin-left: 335px;
-}
-
-.services .title_text {
-    margin-top: 50px;
-    margin-left: 205px;
-}
-
-.services .title_text h1 {
-    font-size: 55px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.services .title_text .line {
-    background: var(--color_blue);
-    height: 10px;
-    width: 120px;
-    margin-left: 75px;
-    margin-bottom: 65px;
-}
-
-.row {
-    width: 720px;
-}
-
-@media (max-width: 1000px) {
-    nav img {
-        width: 40px;
+    /**CONFIGURATION**/
+    
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: "Raleway", sans-serif;
+        text-decoration: none;
+        list-style: none;
     }
-    nav ul {
-        margin-right: 20px;
+    /**Colors**/
+    
+     :root {
+        --color_black: #0000;
+        --color_white: #ffff;
+        --color_orange: #D2691E;
+        --color_blue: #0D64E5;
+        --color_red: #EF1414;
+        --color_gray: #E6E4E4;
+        --color_gray_service: #f1f1f1;
     }
-    nav a {
-        font-size: 17px;
+    
+    ul {
+        margin: 0;
+        padding: 0;
     }
-}
-
-@media (max-width: 909px) {
-    nav img {
-        width: 80px;
-        margin-left: 16px;
-    }
-    nav #icon {
-        display: block;
-        background: transparent;
-        border: none;
-        margin-top: 13px;
-    }
-    nav ul {
-        position: fixed;
+    /**Menu**/
+    
+    nav {
+        height: 110px;
         width: 100%;
-        height: 100vh;
-        background: var(--color_blue);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+        background: var(--color_orange);
+    }
+    
+    nav .container {
         margin-top: 10px;
-        z-index: 1000;
     }
+    
+    nav img {
+        cursor: pointer;
+        margin-top: 10px;
+        width: 90px;
+        margin-left: 180px;
+    }
+    
+    .center {
+        padding: 0 4%;
+        margin: 0 auto;
+    }
+    
+    nav ul {
+        float: right;
+        margin-right: 40px;
+    }
+    
     nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        display: inline-block;
+        line-height: 80px;
+        margin: 20px 8px;
     }
+    
     nav ul li a {
-        font-size: 20px;
+        color: var(--color_white);
+        font-size: 15px;
+        padding: 7px 10px;
+        border-radius: 3px;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
     }
+    
     a.active,
     a:hover {
-        border: none;
-        color: var(--color_red);
+        border: 1px solid var(--color_white);
+        transition: .5s;
     }
-    nav ul.show {
-        left: 0px;
+    
+    nav #icon {
+        color: var(--color_white);
+        font-size: 30px;
+        line-height: 80px;
+        float: right;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
     }
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-    header {
+    /**Carosel**/
+    
+    .carousel {
+        margin-top: -27px;
         width: 100%;
-        padding: 0px 0px 340px;
+        display: inline-block;
     }
-    .active a {
-        font-size: 1.8rem;
+    
+    .carousel .carousel-inner .carousel-item img {
+        height: 520px;
     }
-}
-
-.carrousel {
-    background: var(--color_red);
-}
+    /**Services**/
+    
+    .services {
+        margin-left: 335px;
+    }
+    
+    .services .title_text {
+        margin-top: 50px;
+        margin-left: 205px;
+    }
+    
+    .services .title_text h1 {
+        font-size: 55px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    
+    .services .title_text .line {
+        background: var(--color_blue);
+        height: 10px;
+        width: 120px;
+        margin-left: 75px;
+        margin-bottom: 65px;
+    }
+    
+    .services_align {
+        width: 100%;
+        margin-left: -140px;
+    }
+    
+    .card-service {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: none;
+        overflow: hidden;
+    }
+    
+    .card-service img {
+        transition: all 0.3s;
+    }
+    
+    .card-service img:hover {
+        transition: all 0.3s;
+        transform: scale(1.2)
+    }
+    
+    .card-body {
+        background: var(--color_gray_service);
+    }
+    
+    .card-body h5 {
+        margin-top: 20.2px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .card-body p {
+        font-size: 14px;
+        margin-top: 24px;
+    }
+    
+    @media (max-width: 1000px) {
+        nav img {
+            width: 40px;
+        }
+        nav ul {
+            margin-right: 20px;
+        }
+        nav a {
+            font-size: 17px;
+        }
+    }
+    
+    @media (max-width: 909px) {
+        nav img {
+            width: 80px;
+            margin-left: 16px;
+        }
+        nav #icon {
+            display: block;
+            background: transparent;
+            border: none;
+            margin-top: 13px;
+        }
+        nav ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: var(--color_blue);
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            margin-top: 10px;
+            z-index: 1000;
+        }
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a {
+            font-size: 20px;
+        }
+        a.active,
+        a:hover {
+            border: none;
+            color: var(--color_red);
+        }
+        nav ul.show {
+            left: 0px;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        html {
+            font-size: 50%;
+        }
+        header {
+            width: 100%;
+            padding: 0px 0px 340px;
+        }
+        .active a {
+            font-size: 1.8rem;
+        }
+    }
