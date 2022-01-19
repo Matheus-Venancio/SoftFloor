@@ -22,6 +22,20 @@
         --color_gray_service: #f1f1f1;
     }
     
+    .title_h1 {
+        font-size: 55px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    
+    .line {
+        background: var(--color_blue);
+        height: 10px;
+        width: 120px;
+        margin-left: 75px;
+        margin-bottom: 65px;
+    }
+    
     ul {
         margin: 0;
         padding: 0;
@@ -109,20 +123,6 @@
         margin-left: 205px;
     }
     
-    .services .title_text h1 {
-        font-size: 55px;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-    }
-    
-    .services .title_text .line {
-        background: var(--color_blue);
-        height: 10px;
-        width: 120px;
-        margin-left: 75px;
-        margin-bottom: 65px;
-    }
-    
     .services_align {
         width: 100%;
         margin-left: -140px;
@@ -162,6 +162,45 @@
     .card-body p {
         font-size: 14px;
         margin-top: 24px;
+    }
+    /**Who**/
+    
+    .who {
+        width: 100%;
+        background: var(--color_gray_service);
+    }
+    
+    .who .container {}
+    
+    .who .container .context {}
+    
+    .who .container .context .container_left {
+        float: left;
+        margin-left: -127px;
+        width: 790px;
+        height: 660px;
+        background: var(--gradient_layout);
+        opacity: 1;
+    }
+    
+    .who .container .context .container_left .img-who {
+        margin-top: 150px;
+        width: 250px;
+    }
+    
+    .who .container .context .container_left .img-who img {
+        width: 600px;
+        height: 460px;
+    }
+    
+    .who .container .context .container_right {
+        float: right;
+        width: 50%;
+        margin-top: -500px;
+    }
+    
+    .who .container .context .container_right .line {
+        margin-left: 10px;
     }
     
     @media (max-width: 1000px) {
