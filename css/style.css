@@ -17,6 +17,7 @@
         --color_white: #ffff;
         --color_orange: #D2691E;
         --color_blue: #0D64E5;
+        --color_green: #03bb1c;
         --color_red: #EF1414;
         --color_gray: #E6E4E4;
         --color_gray_service: #f1f1f1;
@@ -27,6 +28,10 @@
         text-transform: uppercase;
         margin-bottom: 15px;
         font-weight: 700;
+    }
+    
+    .parallax {
+        background-attachment: fixed;
     }
     
     .line {
@@ -112,6 +117,30 @@
     
     .carousel .carousel-inner .carousel-item img {
         height: 520px;
+    }
+    /**btn whats**/
+    
+    .btn_whats {
+        z-index: 100;
+        margin-left: 90%;
+        position: fixed;
+        width: 60px;
+        margin-top: -66px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btn_whats .container_whats {
+        background: var(--color_green);
+        border-radius: 8px;
+        height: 60px;
+    }
+    
+    .btn_whats .container_whats a i {
+        text-decoration: none;
+        color: var(--color_white);
+        margin-top: 8px;
+        font-size: 40px;
     }
     /**Services**/
     
