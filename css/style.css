@@ -389,6 +389,37 @@ nav #icon {
     font-size: 29px;
 }
 
+.form .container .context .container_left .input_form {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.form .container .context .container_left .input_form input {
+    padding: 5px 65px 1px 5px;
+}
+
+.form .container .context .container_left .input_form input #email,
+#email,
+#cep,
+#number,
+#city {
+    margin-left: 60px;
+}
+
+.form .container .context .container_left input#address {
+    width: 577px;
+    height: 34px;
+    margin-top: 20px;
+    margin-left: -2px;
+}
+
+.form .container .context .container_left textarea {
+    width: 577px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
 .form .container .context .container_right {
     float: right;
     width: 420px;
