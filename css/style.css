@@ -392,10 +392,14 @@ nav #icon {
 .form .container .context .container_left .input_form {
     width: 100%;
     padding: 15px 0px;
+    color: #0000;
 }
 
 .form .container .context .container_left .input_form input {
     padding: 5px 65px 1px 5px;
+    border-radius: 9px;
+    background: var(--bs-gray-400);
+    border-style: none;
 }
 
 .form .container .context .container_left .input_form input #email,
@@ -411,6 +415,9 @@ nav #icon {
     height: 34px;
     margin-top: 20px;
     margin-left: -2px;
+    border-radius: 9px;
+    background: var(--bs-gray-400);
+    border-style: none;
 }
 
 .form .container .context .container_left textarea {
@@ -418,6 +425,19 @@ nav #icon {
     height: 120px;
     margin-top: 20px;
     margin-left: 3px;
+    border-radius: 9px;
+    background: var(--bs-gray-400);
+    border-style: none;
+}
+
+.form .container .context .container_left #btn_form {
+    border: none;
+    background: var(--color_orange);
+    color: var(--color_white);
+    width: 90px;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 490px;
 }
 
 .form .container .context .container_right {
