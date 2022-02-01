@@ -1,12 +1,12 @@
     /**CONFIGURATION**/
     
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Open-sans:wght@400;500;600;700&display=swap");
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         outline: none;
-        font-family: "Raleway", sans-serif;
+        font-family: "Open-sans", sans-serif;
         text-decoration: none;
         list-style: none;
     }
@@ -81,7 +81,7 @@
         margin: 20px 8px;
     }
     
-    nav ul li a {
+    nav ul li .link {
         color: var(--color_white);
         font-size: 15px;
         padding: 7px 10px;
@@ -92,8 +92,8 @@
         cursor: pointer;
     }
     
-    a.active,
-    a:hover {
+    .link.active,
+    .link:hover {
         border: 1px solid var(--color_white);
         transition: .5s;
     }
@@ -156,6 +156,10 @@
     .services_align {
         width: 100%;
         margin-left: -140px;
+    }
+    
+    .services .services_align .imgConfigure {
+        height: 372px;
     }
     
     .card-service {
@@ -361,10 +365,6 @@
         opacity: 1;
     }
     
-    .form .container .context .container_right h4 {
-        font-size: 29px;
-    }
-    
     .form .container .context .container_left h4 {
         font-size: 29px;
     }
@@ -387,7 +387,7 @@
     #cep,
     #number,
     #city {
-        margin-left: 60px;
+        margin-left: 40px;
     }
     
     .form .container .context .container_left input#address {
@@ -410,7 +410,7 @@
         border-style: none;
     }
     
-    .form .container .context .container_left #btn_form {
+    .form .container .context .container_left .btn_form {
         border: none;
         background: var(--color_orange);
         color: var(--color_white);
@@ -418,11 +418,19 @@
         height: 30px;
         margin-top: 16px;
         margin-left: 490px;
+        cursor: pointer;
+    }    
+    .form .container button:hover {
+        background: var(--color_blue);
     }
     
     .form .container .context .container_right {
         float: right;
         width: 420px;
+    }
+    
+    .form .container .context .container_right h4 {
+        font-size: 29px;
     }
     
     .form .container .context .container_right .left {
@@ -455,6 +463,11 @@
         margin-right: 15px;
         margin-top: -20px;
         text-align: center;
+        transition: .4s;
+    }
+    
+    .form .container .context .container_right .social_media .social_back:hover {
+        background: var(--color_blue);
     }
     
     .form .container .context .container_right .social_media .social_back i {
@@ -469,7 +482,6 @@
         background: var(--color_orange);
         height: 150px;
         margin-top: 120px;
-        z-index: 10;
         margin-top: 190px;
         display: inline-flex;
     }
@@ -480,6 +492,42 @@
     
     .footer footer .logo img {
         width: 100px;
+        margin-left: 105px;
+        margin-top: 40px;
+    }
+    
+    .footer footer .mensagem {
+        margin-left: 600px;
+        margin-top: 80px;
+    }
+    
+    .footer footer .mensagem h5 {
+        font-size: 30px;
+        color: var(--color_white);
+        font-weight: bold;
+    }
+    /**Copy**/
+    
+    .copy {
+        background: #d36103;
+        color: var(--color_white);
+        width: 100%;
+        z-index: 10px;
+        height: 50px;
+        text-align: center;
+    }
+    
+    .copy p {
+        padding: 10px;
+    }
+    
+    .copy p a {
+        text-decoration: none;
+        color: var(--color_white);
+    }
+    
+    .copy p a:hover {
+        color: var(--color_green);
     }
     
     @media (max-width: 1000px) {

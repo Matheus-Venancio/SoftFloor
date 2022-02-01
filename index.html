@@ -21,12 +21,12 @@
     <nav>
         <img src="img/logo.png">
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#service">Serviços</a></li>
-            <li><a href="#who">Quem somos</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a class="active link" href="#home">Home</a></li>
+            <li><a class="link" href="#service">Serviços</a></li>
+            <li><a class="link" href="#who">Quem somos</a></li>
+            <li><a class="link" href="#projects">Projetos</a></li>
+            <li><a class="link" href="#faq">FAQ</a></li>
+            <li><a class="link" href="#contact">Contato</a></li>
         </ul>
         <label id="icon"><i class=" fas fa-bars "></i></label>
     </nav>
@@ -42,7 +42,7 @@
                 <img src="img/banner1.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="img/banner2.jpeg" class="d-block w-100" alt="...">
+                <img src="img/baner4.jfif" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
                 <img src="img/banner3.jpeg" class="d-block w-100" alt="...">
@@ -142,7 +142,7 @@
             <div class="line-information"></div>
             <div class="information_number">
                 <h1>20</h1>
-                <p>funcionARIOS</p>
+                <p>funcionarios</p>
             </div>
         </div>
     </section>
@@ -166,12 +166,12 @@
                 </div>
                 <div class="col">
                     <div class="card-section">
-                        <img src="img/service_piscina.jpeg" class="card-img-top" alt="...">
+                        <img src="img/banner2.jpeg" class="card-img-top imgConfigure" alt="...">
                     </div>
                 </div>
                 <div class="col">
                     <div class="card-section">
-                        <img src="img/service_park1.jpeg" class="card-img-top" alt="...">
+                        <img src="img/services.jfif" class="card-img-top" alt="...">
                     </div>
                 </div>
             </div>
@@ -280,7 +280,7 @@
 
                     <div class="input_form">
                         <label for="name"></label>
-                        <input type="text" id="name" placeholder="Nome completo:" maxlength="30" required>
+                        <input type="text" id="name" onkeypress="return textInput();" placeholder="Nome completo:" maxlength="30" required>
 
                         <label for="email"></label>
                         <input type="email" id="email" placeholder="Email:" maxlength="30" required>
@@ -290,32 +290,32 @@
                         <input type="number" id="phone" placeholder="Telefone:" maxlength="11" required>
 
                         <label for="cep"></label>
-                        <input type="text" id="cep" placeholder="CEP:" maxlength="30" required>
+                        <input type="text" id="cep" onkeypress="return numberInput();" placeholder="CEP:" maxlength="30" required>
                     </div>
                     <div class="input_form">
                         <label for="state"></label>
-                        <input type="text" id="state" placeholder=" Estado:" maxlength="30" required>
+                        <input type="text" id="state" onkeypress="return textInput();" placeholder=" Estado:" maxlength="30" required>
 
 
                         <label for="number"></label>
-                        <input type="number" id="number" placeholder="Número:" maxlength="30" required>
+                        <input type="number" id="number" onkeypress="return numberInput();" placeholder="Número:" maxlength="30" required>
                     </div>
                     <div class="input_form">
                         <label for="district"></label>
-                        <input type="text" id="district" placeholder=" Bairro:" maxlength="30" required>
+                        <input type="text" id="district" onkeypress="return textInput();" placeholder=" Bairro:" maxlength="30" required>
 
                         <label for="city"></label>
-                        <input type="text" id="city" placeholder=" Cidade:" maxlength="30" required>
+                        <input type="text" id="city" onkeypress="return textInput();" placeholder=" Cidade:" maxlength="30" required>
                     </div>
 
                     <label for="address"></label>
-                    <input type="text" id="address" placeholder="Endereço:" maxlength="80" required>
+                    <input type="text" id="address" onkeypress="return textInput();" placeholder="Endereço:" maxlength="80" required>
 
 
                     <label for=""></label>
                     <textarea placeholder="Mande uma mensagem para gente" maxlength="120"></textarea>
 
-                    <button id="btn_form">Enviar</button>
+                    <button class="btn_form">Enviar</button>
 
                 </div>
                 <div class="container_right">
@@ -345,7 +345,7 @@
                         </div>
 
                         <div class="social_back">
-                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-facebook"></i></a>
                         </div>
 
                         <div class="social_back">
@@ -365,7 +365,14 @@
                 <h5>Fazendo arte com a reciclagem</h5>
             </div>
         </footer>
-        <div class="copy"></div>
+
+    </section>
+
+    <section class="copy">
+        <p>copyright &copy;2022 created by
+            <a href="#">Matheus Venancio</a> &
+            <a href="https://www.linkedin.com/in/luis-henrique-bb8763225/">Luis Henrique</a></p>
+
     </section>
     <script src="js/script.js">
     </script>
