@@ -682,13 +682,89 @@
     
     @media (max-width: 1000px) {
         nav img {
-            width: 40px;
+            width: 70px;
+            margin-top: 20px;
         }
         nav ul {
             margin-right: 20px;
         }
-        nav a {
-            font-size: 17px;
+        nav ul li .link {
+            font-size: 12px;
+        }
+        /**title**/
+        .title_h1 {
+            font-size: 35px;
+            margin-left: -120px;
+        }
+        .line {
+            margin-left: -120px;
+            height: 5px;
+            width: 70px;
+        }
+        /**Who**/
+        .who .container .context .container_left .img-who img {
+            width: 210%;
+            height: 460px;
+            margin-left: -15px;
+        }
+        .who .container .context .container_right {
+            margin-right: -15%;
+        }
+        .who .container .context .container_right .title_h1 {
+            margin-left: 0px;
+        }
+        .who .container .context .container_right p {
+            font-size: 15.6px;
+            margin-top: -47px;
+        }
+        /**projects**/
+        .services_align .image {
+            width: 300px;
+        }
+        .services .services_align .imgConfigure {
+            height: 224px;
+        }
+        /**Patners**/
+        .partners .title_text .partners_text {
+            margin-left: 10px;
+        }
+        .partners .title_text .left {
+            margin-left: 405px;
+            width: 100px;
+        }
+        .partners .logo_partners .the_partners img {
+            width: 90px;
+        }
+        /**faq**/
+        .faq .title_text .left {
+            margin-left: 240px;
+            width: 150px;
+        }
+        .faq .accordion {
+            width: 680px;
+        }
+        /**form**/
+        .form .title_text .left {
+            margin-left: 340px;
+            width: 90px;
+        }
+        .form .container .context .container_left {
+            margin-bottom: 210px;
+        }
+        .form .container .context .container_right {
+            float: none;
+        }
+        .form .container .context .container_right .title_h1 {
+            font-size: 35px;
+            margin-left: 0px;
+        }
+        /**footer**/
+        .footer footer .mensagem {
+            margin-left: 400px;
+            font-size: 14px;
+        }
+        .footer footer .mensagem h5 {
+            font-size: 21px;
         }
     }
     
@@ -712,7 +788,6 @@
             left: -100%;
             text-align: center;
             transition: all .5s;
-            margin-top: 10px;
             z-index: 1000;
         }
         nav ul li {
@@ -730,6 +805,9 @@
         }
         nav ul.show {
             left: 0px;
+        }
+        #carouselExampleIndicators {
+            margin-top: 0px;
         }
     }
     
