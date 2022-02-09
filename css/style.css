@@ -63,10 +63,6 @@
         background: var(--color_orange);
     }
     
-    nav .container {
-        margin-top: 10px;
-    }
-    
     nav img {
         cursor: pointer;
         margin-top: 10px;
@@ -296,12 +292,12 @@
     .services_align .image {
         cursor: pointer;
         position: relative;
-        width: 500px;
+        width: 100%;
     }
     
     .services_align .image .image-img {
         display: block;
-        width: 100%;
+    
     }
     
     .imgOverlay {
@@ -718,9 +714,6 @@
             margin-top: -47px;
         }
         /**projects**/
-        .services_align .image {
-            width: 300px;
-        }
         .services .services_align .imgConfigure {
             height: 224px;
         }
@@ -768,7 +761,7 @@
         }
     }
     
-    @media (max-width: 909px) {
+    @media (max-width: 800px) {
         nav img {
             width: 80px;
             margin-left: 16px;
@@ -809,7 +802,17 @@
         #carouselExampleIndicators {
             margin-top: 0px;
         }
+
+        .who .container .context .container_right {
+            margin-right: -9%;
+        }
+
+        .services .services_align .imgConfigure {
+            height: 188px;
+        }
     }
+
+    @media (max-width: 620px) {}
     
     @media (max-width: 450px) {
         html {
