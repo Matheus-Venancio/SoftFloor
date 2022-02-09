@@ -24,13 +24,14 @@
     }
     
     .title_h1 {
-        font-size: 55px;
+        font-size: 3.2rem;
         text-transform: uppercase;
         margin-bottom: 15px;
         font-weight: 700;
+        text-align: center;
     }
     /**Effects js**/
-    
+    /***
     .reveal {
         position: relative;
         transform: translateY(150px);
@@ -41,13 +42,13 @@
     .reveal.active {
         transform: translateY(0px);
         opacity: 1;
-    }
+    }***/
     
     .line {
         background: var(--color_blue);
         height: 10px;
         width: 120px;
-        margin-left: 75px;
+        margin-left: 45%;
         margin-bottom: 65px;
     }
     
@@ -151,17 +152,21 @@
     /**Services**/
     
     .services {
-        margin-left: 335px;
+        
     }
     
     .services .title_text {
         margin-top: 50px;
-        margin-left: 205px;
+       
     }
     
     .services_align {
         width: 100%;
         margin-left: -140px;
+    }
+
+    .services_align .row{
+        margin-left:335px;
     }
     
     .services .services_align .imgConfigure {
@@ -687,133 +692,8 @@
         nav ul li .link {
             font-size: 12px;
         }
-        /**title**/
-        .title_h1 {
-            font-size: 35px;
-            margin-left: -120px;
-        }
-        .line {
-            margin-left: -120px;
-            height: 5px;
-            width: 70px;
-        }
-        /**Who**/
-        .who .container .context .container_left .img-who img {
-            width: 210%;
-            height: 460px;
-            margin-left: -15px;
-        }
-        .who .container .context .container_right {
-            margin-right: -15%;
-        }
-        .who .container .context .container_right .title_h1 {
-            margin-left: 0px;
-        }
-        .who .container .context .container_right p {
-            font-size: 15.6px;
-            margin-top: -47px;
-        }
-        /**projects**/
-        .services .services_align .imgConfigure {
-            height: 224px;
-        }
-        /**Patners**/
-        .partners .title_text .partners_text {
-            margin-left: 10px;
-        }
-        .partners .title_text .left {
-            margin-left: 405px;
-            width: 100px;
-        }
-        .partners .logo_partners .the_partners img {
-            width: 90px;
-        }
-        /**faq**/
-        .faq .title_text .left {
-            margin-left: 240px;
-            width: 150px;
-        }
-        .faq .accordion {
-            width: 680px;
-        }
-        /**form**/
-        .form .title_text .left {
-            margin-left: 340px;
-            width: 90px;
-        }
-        .form .container .context .container_left {
-            margin-bottom: 210px;
-        }
-        .form .container .context .container_right {
-            float: none;
-        }
-        .form .container .context .container_right .title_h1 {
-            font-size: 35px;
-            margin-left: 0px;
-        }
-        /**footer**/
-        .footer footer .mensagem {
-            margin-left: 400px;
-            font-size: 14px;
-        }
-        .footer footer .mensagem h5 {
-            font-size: 21px;
-        }
     }
-    
-    @media (max-width: 800px) {
-        nav img {
-            width: 80px;
-            margin-left: 16px;
-        }
-        nav #icon {
-            display: block;
-            background: transparent;
-            border: none;
-            margin-top: 13px;
-        }
-        nav ul {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: var(--color_blue);
-            top: 107px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            z-index: 1000;
-        }
-        nav ul li {
-            display: block;
-            margin: 50px 0;
-            line-height: 30px;
-        }
-        nav ul li a {
-            font-size: 20px;
-        }
-        a.active,
-        a:hover {
-            border: none;
-            color: var(--color_red);
-        }
-        nav ul.show {
-            left: 0px;
-        }
-        #carouselExampleIndicators {
-            margin-top: 0px;
-        }
-
-        .who .container .context .container_right {
-            margin-right: -9%;
-        }
-
-        .services .services_align .imgConfigure {
-            height: 188px;
-        }
-    }
-
-    @media (max-width: 620px) {}
-    
+   
     @media (max-width: 450px) {
         html {
             font-size: 50%;
