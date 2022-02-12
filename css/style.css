@@ -31,7 +31,7 @@
         text-align: center;
     }
     /**Effects js**/
-    /***
+    /**
     .reveal {
         position: relative;
         transform: translateY(150px);
@@ -42,7 +42,7 @@
     .reveal.active {
         transform: translateY(0px);
         opacity: 1;
-    }***/
+    }**/
     
     .line {
         background: var(--color_blue);
@@ -151,10 +151,6 @@
     }
     /**Services**/
     
-    .services {
-        
-    }
-    
     .services .title_text {
         margin-top: 50px;
        
@@ -171,6 +167,10 @@
     
     .services .services_align .imgConfigure {
         height: 372px;
+    }
+
+    .services .services_align .imgConfigure .img_adjust{
+        height: 100%;
     }
     
     .card-service {
@@ -211,17 +211,22 @@
     /**Who**/
     
     .who {
-        width: 100%;
         background: var(--color_gray_service);
     }
-    
+    .who .container{
+      width: 100%;
+      margin-top: 80px;
+    }
+
+    .who .container .context{
+        position: relative;
+    display: flex;
+    }
     .who .container .context .container_left {
-        float: left;
         margin-left: -127px;
-        width: 790px;
-        height: 610px;
-        background: var(--gradient_layout);
-        opacity: 1;
+    width: 100%;
+    background: var(--gradient_layout);
+    opacity: 1;
     }
     
     .who .container .context .container_left .img-who {
@@ -235,13 +240,21 @@
     }
     
     .who .container .context .container_right {
-        float: right;
-        width: 50%;
-        margin-top: -474px;
+   
+        margin-top: 135px;
+    }
+
+    .who .container .context .container_right .left_h1{
+        margin-left: -190px;
     }
     
     .who .container .context .container_right .line {
         margin-left: 10px;
+    }
+
+    .who .container .context .container_right p{
+        width: 650px;
+    font-size: 13px;
     }
     /**Information**/
     
@@ -512,6 +525,10 @@
         margin-top: 70px;
         margin-bottom: -60px;
     }
+
+    .form .container .context .container_right .left_h1{
+        margin-left: -110px;
+    }
     
     .form .container .context .container_right .social_media {
         display: flex;
@@ -693,7 +710,102 @@
             font-size: 12px;
         }
     }
-   
+
+    @media (max-width: 909px) {
+        nav img {
+            width: 80px;
+            margin-left: 16px;
+        }
+        nav #icon {
+            display: block;
+            background: transparent;
+            border: none;
+            margin-top: 13px;
+        }
+        nav ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: var(--color_blue);
+            top: 70px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            margin-top: 10px;
+            z-index: 1000;
+        }
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a {
+            font-size: 20px;
+        }
+        a.active,
+        a:hover {
+            border: none;
+            color: var(--color_red);
+        }
+        nav ul.show {
+            left: 0px;
+        }
+
+        /**Carousel**/
+        .carousel{
+            margin-top: 0px;
+        }
+
+        /**Services**/
+        .services_align .row{
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .services_align .row .col{
+            width: 350px;
+        }
+
+        /**Who number**/
+        .number_who .information .information_number h1{
+            font-size: 30px;
+        }
+
+        .number_who .information .information_number p{
+            font-size: 12px;
+        }
+    }
+    @media (max-width: 800px) {
+         /**Who number**/
+         .number_who .information .information_number {
+            padding: 15px;
+          
+        }
+
+        .number_who .information .line-information {
+            margin-top: 39px;
+        }
+         .number_who .information .information_number h1{
+            font-size: 30px;
+        }
+
+        .number_who .information .information_number p{
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        html {
+            font-size: 50%;
+        }
+        header {
+            width: 100%;
+            padding: 0px 0px 340px;
+        }
+        .active a {
+            font-size: 1.8rem;
+        }
+    }
     @media (max-width: 450px) {
         html {
             font-size: 50%;
