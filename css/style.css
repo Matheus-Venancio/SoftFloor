@@ -256,6 +256,94 @@
         width: 650px;
     font-size: 13px;
     }
+
+    /**TESTE**/
+    
+#feature {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text p::after {
+    content: '';
+    width: 50px;
+    height: 35px;
+    /**Background com gradiente do simbolo**/
+    background: linear-gradient(#019578, #fff);
+    position: absolute;
+    top: -20;
+    left: 0;
+    z-index: -1;
+    /**Fazendo uma rotação com o simbolo**/
+    transform: rotate(10deg);
+    /**Faz a curva do simbolo**/
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title-text h1 {
+    font-size: 50px;
+}
+
+.feature-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.features {
+    flex-basis: 40%;
+    MARGIN-LEFT: 110px;
+}
+
+.features h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+    font-weight: bold;
+}
+
+.features-img {
+    flex-basis: 50%;
+  
+}
+
+.features-img img {
+    width: 90%;
+    margin-left: 90px;
+}
+
+.features-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features-text p {
+    padding: 0 20px;
+    font-weight: bold;
+    text-align: initial;
+}
+
     /**Information**/
     
     .number_who {
@@ -385,25 +473,29 @@
     }
     
     .partners .logo_partners {
+        width: 70%;
+        margin: auto;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: -60px;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    
     }
     
     .partners .logo_partners .the_partners {
-        padding: 60px;
-        color: var(--color_white);
+        width: 100%;
+        display: contents;
     }
     
     .partners .logo_partners .the_partners img {
         width: 110px;
     }
+
     /**FAQ**/
     
     .faq {
         margin-top: 70px;
-        width: 100%;
+        
     }
     
     .faq .title_text {
@@ -414,10 +506,14 @@
         margin-left: 556px;
         width: 200px;
     }
+
+    .faq .configure_faq{
+        width: 100%;
+        padding: 0px 290px;
+    }
     
     .faq .accordion {
-        width: 780px;
-        margin-left: 20%;
+     
         box-shadow: 0 0 3em var(--color_gray_service);
     }
     /**Form**/
@@ -774,6 +870,15 @@
         .number_who .information .information_number p{
             font-size: 12px;
         }
+
+        /**faq**/
+        .faq{
+            width: 100%;
+        }
+        .faq .configure_faq{
+            width: 100%;
+            padding: 0px auto;
+        }
     }
     @media (max-width: 800px) {
          /**Who number**/
@@ -794,17 +899,39 @@
         }
     }
 
-    @media (max-width: 600px) {
-        html {
-            font-size: 50%;
+    @media (max-width: 704px) {
+        .faq .configure_faq .accordion .accordion-item{
+            width: 250px;
         }
-        header {
-            width: 100%;
-            padding: 0px 0px 340px;
+        
+    }
+
+    @media (max-width: 680px) {
+        .faq .configure_faq{
+           align-items: center;
+           justify-content: center;
         }
-        .active a {
-            font-size: 1.8rem;
+        
+        .partners{
+            height: 360px;
         }
+        .partners .logo_partners{
+            padding: 90px;
+            margin-top: -150px;
+        }
+
+        .partners .logo_partners .the_partners{
+            width: 90px;
+        }
+
+    }
+
+    @media (max-width: 593px){
+       
+        .partners .logo_partners .the_partners img{
+            width: 70px;
+        }
+
     }
     @media (max-width: 450px) {
         html {
