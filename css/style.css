@@ -29,6 +29,18 @@
         margin-bottom: 15px;
         font-weight: 700;
         text-align: center;
+        background-image: linear-gradient(to bottom,  var(--color_blue), var(--color_orange));
+  
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+      
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+        -webkit-text-fill-color: transparent;
+      
+        /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+        color: black;
+        
     }
     /**Effects js**/
     /**
@@ -44,13 +56,14 @@
         opacity: 1;
     }**/
     
+    /**
     .line {
         background: var(--color_blue);
         height: 10px;
         width: 120px;
         margin-left: 45%;
         margin-bottom: 65px;
-    }
+    }**/
     
     ul {
         margin: 0;
@@ -210,58 +223,10 @@
     }
     /**Who**/
     
-    .who {
-        background: var(--color_gray_service);
-    }
-    .who .container{
-      width: 100%;
-      margin-top: 80px;
-    }
-
-    .who .container .context{
-        position: relative;
-    display: flex;
-    }
-    .who .container .context .container_left {
-        margin-left: -127px;
-    width: 100%;
-    background: var(--gradient_layout);
-    opacity: 1;
-    }
-    
-    .who .container .context .container_left .img-who {
-        margin-top: 150px;
-        width: 250px;
-    }
-    
-    .who .container .context .container_left .img-who img {
-        width: 600px;
-        height: 460px;
-    }
-    
-    .who .container .context .container_right {
-   
-        margin-top: 135px;
-    }
-
-    .who .container .context .container_right .left_h1{
-        margin-left: -190px;
-    }
-    
-    .who .container .context .container_right .line {
-        margin-left: 10px;
-    }
-
-    .who .container .context .container_right p{
-        width: 650px;
-    font-size: 13px;
-    }
-
-    /**TESTE**/
-    
 #feature {
     width: 100%;
-    padding: 70px 0;
+    padding: 190px 0;
+   
 }
 
 .title-text {
@@ -330,6 +295,7 @@
 .features-img img {
     width: 90%;
     margin-left: 90px;
+
 }
 
 .features-desc {
@@ -339,8 +305,7 @@
 }
 
 .features-text p {
-    padding: 0 20px;
-    font-weight: bold;
+margin-top: 24px;
     text-align: initial;
 }
 
@@ -354,6 +319,8 @@
         align-items: center;
         justify-content: center;
         margin-left: 0;
+        margin-top: -195px;
+        z-index: 10;
     }
     
     .number_who .information {
@@ -394,11 +361,20 @@
         transform: scale(1.1)
     }
     /**Projects**/
+
+    .services{
+        padding: 120px 0px;
+    }
+
+    .services .title_text h1{
+        margin-bottom: 40px;
+    }
     
     .services_align .image {
         cursor: pointer;
         position: relative;
         width: 100%;
+        
     }
     
     .services_align .image .image-img {
