@@ -43,7 +43,6 @@
         
     }
     /**Effects js**/
-    /**
     .reveal {
         position: relative;
         transform: translateY(150px);
@@ -54,16 +53,7 @@
     .reveal.active {
         transform: translateY(0px);
         opacity: 1;
-    }**/
-    
-    /**
-    .line {
-        background: var(--color_blue);
-        height: 10px;
-        width: 120px;
-        margin-left: 45%;
-        margin-bottom: 65px;
-    }**/
+    }
     
     ul {
         margin: 0;
@@ -809,31 +799,7 @@ margin-top: 24px;
         .footer footer .mensagem h5 {
             font-size: 25px;
             
-        }
-
-        /**PROJECTS.HTML
-        #carouselExampleSlidesOnly {
-        float: none;
-        }
-        .carousel-inner {
-            margin-left: 70%;      
-        }
-
-        .social_media_project {
-            margin-top: 60px;
-            margin-left: 31%;
-            float: none;
-        }
-
-        .container_text {
-            margin-left: 30%;
-        }
-
-        .btn_projects{
-            margin-left: 30%;
-        }**/
-
-      
+        }      
     }
 
     @media (max-width: 909px) {
