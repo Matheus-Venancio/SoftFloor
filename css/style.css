@@ -451,6 +451,7 @@ margin-top: 24px;
     .partners .logo_partners {
         width: 70%;
         margin: auto;
+        margin-top: 100px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -604,6 +605,7 @@ margin-top: 24px;
     
     .form .container .context .container_right .social_media {
         display: flex;
+        margin-top: 100px;
     }
     
     .form .container .context .container_right .social_media .social_back {
@@ -781,6 +783,21 @@ margin-top: 24px;
         nav ul li .link {
             font-size: 12px;
         }
+
+        .feature-box{
+    align-items: center;
+    justify-content: center;
+        }
+
+        /**Contacts**/
+        .form .container .context{
+            display: grid;
+        }
+
+        .form .container .context .container_right {
+        
+            margin-top: 240px;
+        }
     }
 
     @media (max-width: 909px) {
@@ -893,19 +910,41 @@ margin-top: 24px;
         }
         .partners .logo_partners{
             padding: 90px;
-            margin-top: -150px;
+            margin-top: -50px;
         }
 
         .partners .logo_partners .the_partners{
             width: 90px;
         }
+        .form .container .context .container_left p{
+            width: 450px;
+        }
+        .form .container .context .container_left .input_form input{
+            padding: 5px;
+        }
+        .form .container .context .container_left input#address{
+            width: 400px;
+        
+        }
 
+        .form .container .context .container_left .btn_form{
+            margin-left: -95px;
+        }
+
+        .form .container .context .container_left textarea{
+            width: 400px;
+            margin-bottom: 40px;
+        }
     }
 
     @media (max-width: 593px){
        
         .partners .logo_partners .the_partners img{
             width: 70px;
+        }
+
+        .features-img img {
+        margin-left: 40px;
         }
 
     }
