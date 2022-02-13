@@ -870,7 +870,7 @@ margin-top: 24px;
         }
         .faq .configure_faq{
             width: 100%;
-            padding: 0px auto;
+            padding: 0px 190px;
         }
     }
     @media (max-width: 800px) {
@@ -903,6 +903,10 @@ margin-top: 24px;
         .faq .configure_faq{
            align-items: center;
            justify-content: center;
+        }
+
+        .faq .configure_faq .accordion{
+            margin-left: -20px;
         }
         
         .partners{
@@ -945,6 +949,11 @@ margin-top: 24px;
 
         .features-img img {
         margin-left: 40px;
+        }
+
+        .faq .configure_faq{
+            
+            padding: 0px 140px;
         }
 
     }
