@@ -154,63 +154,14 @@
         font-size: 40px;
     }
     /**Services**/
-    
-    .services .title_text {
-        margin-top: 50px;
-       
-    }
-    
-    .services_align {
+    .services_align .text_services{
         width: 100%;
-        margin-left: -140px;
+        text-align: center;
     }
+    .services_align .text_services p{
+       color: var(--color_blue);
+       font-size: 15px;
 
-    .services_align .row{
-        margin-left:335px;
-    }
-    
-    .services .services_align .imgConfigure {
-        height: 372px;
-    }
-
-    .services .services_align .imgConfigure .img_adjust{
-        height: 100%;
-    }
-    
-    .card-service {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: none;
-        overflow: hidden;
-    }
-    
-    .card-service img {
-        transition: all 0.3s;
-    }
-    
-    .card-service img:hover {
-        transition: all 0.3s;
-        transform: scale(1.2)
-    }
-    
-    .card-body {
-        background: var(--color_gray_service);
-    }
-    
-    .card-body h5 {
-        margin-top: 20.2px;
-        font-size: 22px;
-        font-weight: bold;
-    }
-    
-    .card-body p {
-        font-size: 14px;
-        margin-top: 24px;
     }
     /**Who**/
     
