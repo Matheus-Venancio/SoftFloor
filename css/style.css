@@ -177,9 +177,11 @@ nav #icon {
   color: #0f0f0f;
 }
 
-.services .row .col {
-  padding: 0rem 4rem;
+.services .row{
+ display: flex;
+ width: 60rem;
 }
+
 
 .services .row .col a{
     text-decoration: none;
@@ -187,6 +189,8 @@ nav #icon {
 
 .services .row .col .card {
   cursor: pointer;
+  width: 20rem;
+  margin-left: 18rem;
 }
 
 .services .row .col .card .card-body {
@@ -194,12 +198,21 @@ nav #icon {
   background: var(--color_orange);
 }
 
-.services .row .col .card .card-body h5 {
-  font-size: 20px;
+.services .row .col .card .card-body .titleservice {
+  font-size: 40px;
   font-weight: 400;
   text-decoration: none;
   color: var(--color_gray);
 }
+
+.services .row .col .card .card-body .textservice {
+  font-size: 15px;
+  font-weight: 200;
+  width: 100%;
+  text-decoration: none;
+  color: #e6e4e4;
+}
+
 .services_align .image {
   cursor: pointer;
 
