@@ -155,7 +155,61 @@ nav #icon {
   margin-top: 8px;
   font-size: 40px;
 }
+
 /**Services**/
+
+.services {
+  padding: 120px 0px;
+}
+
+.services .title_text h1 {
+  margin-bottom: 40px;
+}
+
+.services .text_services{
+  width: 100%;
+  margin-left: 23rem;
+}
+
+.services .text_services p{
+  width: 50%;
+  font-size: 15px;
+  color: #0f0f0f;
+}
+
+.services .row .col {
+  padding: 0rem 4rem;
+}
+
+.services .row .col a{
+    text-decoration: none;
+  }
+
+.services .row .col .card {
+  cursor: pointer;
+}
+
+.services .row .col .card .card-body {
+  text-align: center;
+  background: var(--color_orange);
+}
+
+.services .row .col .card .card-body h5 {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color_gray);
+}
+.services_align .image {
+  cursor: pointer;
+
+  width: 35rem;
+}
+
+.services_align .image .image-img {
+  display: block;
+}
+
 .services_align .text_services {
   width: 100%;
   text-align: center;
@@ -164,6 +218,7 @@ nav #icon {
   color: var(--color_blue);
   font-size: 15px;
 }
+
 /**Who**/
 
 #feature {
@@ -302,44 +357,44 @@ nav #icon {
 }
 /**Projects**/
 
-.services {
+.projects {
   padding: 120px 0px;
 }
 
-.services .title_text h1 {
+.projects .title_text h1 {
   margin-bottom: 40px;
 }
 
-.services .row .col {
+.projects .row .col {
   padding: 0rem 4rem;
 }
 
-.services .row .col a{
+.projects .row .col a{
     text-decoration: none;
   }
 
-.services .row .col .card {
+.projects .row .col .card {
   cursor: pointer;
 }
 
-.services .row .col .card .card-body {
+.projects .row .col .card .card-body {
   text-align: center;
   background: var(--color_orange);
 }
 
-.services .row .col .card .card-body h5 {
+.projects .row .col .card .card-body h5 {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
   color: var(--color_gray);
 }
-.services_align .image {
+.projects_align .image {
   cursor: pointer;
 
   width: 35rem;
 }
 
-.services_align .image .image-img {
+.projects_align .image .image-img {
   display: block;
 }
 
@@ -738,6 +793,7 @@ nav #icon {
   }
 
   /**Services**/
+  
   .services_align .row {
     align-items: center;
     justify-content: center;
