@@ -237,8 +237,10 @@ nav #icon {
 /**Who**/
 
 #feature {
+  background: var(--color_gray_service);
   width: 100%;
-  padding: 190px 0;
+  padding: 100px 0;
+  height: 100%;
 }
 
 .title-text {
@@ -321,42 +323,6 @@ nav #icon {
 
 /**Information**/
 
-.number_who {
-  background: var(--color_blue);
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0;
-  margin-top: -195px;
-  z-index: 10;
-}
-
-.number_who .information {
-  display: flex;
-  text-align: center;
-}
-
-.number_who .information .information_number {
-  padding: 60px;
-  color: var(--color_white);
-}
-
-.number_who .information .information_number h1 {
-  font-size: 60px;
-}
-
-.number_who .information .information_number p {
-  font-size: 22px;
-}
-
-.number_who .information .line-information {
-  height: 50px;
-  width: 3px;
-  margin-top: 99px;
-  background: var(--color_white);
-}
 
 .services_align {
   overflow: hidden;
@@ -809,22 +775,22 @@ nav #icon {
 
   /**Services**/
   
+  .services .row{
+    display: block;
+  }
   .services_align .row {
     align-items: center;
     justify-content: center;
   }
 
+  .services .text_services p{
+    font-size: 15px;
+    text-align: center;
+    margin-left: -8rem;
+  }
+
   .services_align .row .col {
     width: 350px;
-  }
-
-  /**Who number**/
-  .number_who .information .information_number h1 {
-    font-size: 30px;
-  }
-
-  .number_who .information .information_number p {
-    font-size: 12px;
   }
 
   /**faq**/
@@ -880,23 +846,6 @@ nav #icon {
 
   .adjust_project .btn_projects {
     margin-left: 0px;
-  }
-}
-@media (max-width: 800px) {
-  /**Who number**/
-  .number_who .information .information_number {
-    padding: 15px;
-  }
-
-  .number_who .information .line-information {
-    margin-top: 39px;
-  }
-  .number_who .information .information_number h1 {
-    font-size: 30px;
-  }
-
-  .number_who .information .information_number p {
-    font-size: 18px;
   }
 }
 
