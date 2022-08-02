@@ -9,6 +9,7 @@
   font-family: "Open-sans", sans-serif;
   text-decoration: none;
   list-style: none;
+
 }
 /**Colors**/
 
@@ -166,27 +167,29 @@ nav #icon {
   margin-bottom: 40px;
 }
 
+.services .div_text {
+  width: 100%;
+}
 .services .text_services{
   width: 100%;
   margin-left: 18rem;
 }
 
-.services .text_services p{
+.services .text_services p {
   width: 60%;
   font-size: 17px;
   padding: 3rem 0rem;
   color: #0f0f0f;
 }
 
-.services .row{
- display: flex;
- width: 60rem;
+.services .row {
+  display: flex;
+  width: 60rem;
 }
 
-
-.services .row .col a{
-    text-decoration: none;
-  }
+.services .row .col a {
+  text-decoration: none;
+}
 
 .services .row .col .card {
   cursor: pointer;
@@ -323,7 +326,6 @@ nav #icon {
 
 /**Information**/
 
-
 .services_align {
   overflow: hidden;
 }
@@ -350,9 +352,9 @@ nav #icon {
   padding: 0rem 4rem;
 }
 
-.projects .row .col a{
-    text-decoration: none;
-  }
+.projects .row .col a {
+  text-decoration: none;
+}
 
 .projects .row .col .card {
   cursor: pointer;
@@ -774,8 +776,8 @@ nav #icon {
   }
 
   /**Services**/
-  
-  .services .row{
+
+  .services .row {
     display: block;
   }
   .services_align .row {
@@ -783,7 +785,7 @@ nav #icon {
     justify-content: center;
   }
 
-  .services .text_services p{
+  .services .text_services p {
     font-size: 15px;
     text-align: center;
     margin-left: -8rem;
